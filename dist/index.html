@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Comments</title>
+  <script src="js/app.min.js"></script>
+</head>
+
+  <body>
+    <section class="comments">
+  <div class="comments__wrapper">
+    <div class="comments__counter" id="counter">0 comments</div>
+
+    <ul class="comments__list">
+
+      <!-- <li class="user">
+        <div class="user__avatar"></div>
+        <div class="user__comment">
+          <a class="user__name" href="#">${username}</a>
+
+          <p class="user__text">
+            ${comment}
+          </p>
+            <div class="user__like">
+              <div>
+                <svg
+                  width="15"
+                  height="14"
+                  viewBox="0 0 15 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.5 14L6.4125 12.9929C2.55 9.42997 0 7.07248 0 4.19619C0 1.83869 1.815 0 4.125 0C5.43 0 6.6825 0.617984 7.5 1.58692C8.3175 0.617984 9.57 0 10.875 0C13.185 0 15 1.83869 15 4.19619C15 7.07248 12.45 9.42997 8.5875 12.9929L7.5 14Z"
+                    fill="#ccc"
+                  />
+                </svg>
+                <svg
+                  width="11"
+                  height="14"
+                  viewBox="0 0 11 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.8889 0.777778H8.16667L7.38889 0H3.5L2.72222 0.777778H0V2.33333H10.8889M0.777778 12.4444C0.777778 12.857 0.941666 13.2527 1.23339 13.5444C1.52511 13.8361 1.92077 14 2.33333 14H8.55556C8.96811 14 9.36378 13.8361 9.6555 13.5444C9.94722 13.2527 10.1111 12.857 10.1111 12.4444V3.11111H0.777778V12.4444Z"
+                    fill="#CCCCCC"
+                  />
+                </svg>
+              </div>
+              <span>${editDate(date)}</span>
+            </div>
+          </div> -->
+      
+    </ul>
+    
+    <div class="comments__add">
+      <form class="comments__form">
+        <span class="comments__error-name">Пустое поле</span>
+        <div>
+          <input type="text" placeholder="Имя">
+          <input type="date">
+        </div>
+        <span class="comments__error-textarea">Пустое поле</span>
+        <textarea></textarea>
+        <button type="submit">Leave a comment</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  </body>
+</html>

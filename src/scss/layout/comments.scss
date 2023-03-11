@@ -1,0 +1,119 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.comments {
+  &__wrapper {
+    padding: 40px 0;
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+  }
+  &__counter {
+    font-size: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 20px;
+  }
+  &__list {
+    margin-bottom: 50px;
+  }
+  &__form {
+    div {
+      display: flex;
+      justify-content: space-between;
+      input {
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 16px;
+      }
+      margin-bottom: 15px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 15px;
+      resize: none;
+      padding: 8px;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      background-color: #355999;
+      border: none;
+      color: #fff;
+      padding: 15px 0;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  &__error-name,
+  &__error-textarea {
+    visibility: hidden;
+    display: block;
+    color: red;
+    font-size: 14px;
+    &.active-error {
+      visibility: visible;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.user {
+  margin-bottom: 20px;
+  &__avatar {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    padding-bottom: auto;
+    margin-bottom: 45px;
+    border-radius: 50%;
+    background-color: #ccc;
+    float: left;
+  }
+  &__name {
+    display: block;
+    color: #355999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  &__text {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.33;
+    word-wrap: break-word;
+  }
+  &__like {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 55px;
+    span {
+      font-size: 14px;
+      color: #ccc;
+    }
+    svg {
+      cursor: pointer;
+      margin-right: 8px;
+      user-select: none;
+      &:nth-child(1).like-active {
+        path {
+          fill: red;
+        }
+      }
+      &:nth-child(2) {
+        &:hover {
+          path {
+            fill: #ff9700;
+          }
+        }
+      }
+    }
+  }
+}

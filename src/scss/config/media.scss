@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px) {
+  .comments {
+    &__wrapper {
+      padding: 40px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .comments {
+    &__form {
+      div {
+        flex-direction: column;
+        input {
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  .user {
+    margin-bottom: 30px;
+    &__avatar {
+      float: none;
+      margin-bottom: 15px;
+    }
+    &__text {
+        // margin-bottom: 10px;
+    }
+    &__like {
+      padding-left: 0;
+    }
+  }
+}
